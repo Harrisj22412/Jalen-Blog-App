@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome to Jalen Blog App</title>
+    </head>
+    <body>
+        <h1>Welcome to my blog</h1>
+        <div>
+           {%for post in posts%} 
+                <p>{{post.title}}</p>
+                <p>{{post.author}}</p>
+                <p>{{post.body}}</p>
+           {%endfor%}
+        </div>
+    </body>
+</html>
+
+
